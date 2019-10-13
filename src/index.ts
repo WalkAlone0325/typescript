@@ -3,4 +3,8 @@
 // Symbol
 // import './example/symbol'
 // 接口
-import './example/interface'
+// import './example/interface'
+// 函数
+import './example/function'
+// 泛型
+import './example/generics'

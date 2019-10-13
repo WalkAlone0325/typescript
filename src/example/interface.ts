@@ -52,7 +52,7 @@ let arr11: ArrInter = [1, 'a']
 //   (num1: number, num2: number): number
 // }
 type AddFunc = (num1: number, num2: number) => number
-const add: AddFunc = (n1, n2) => n1 + n2
+const add1: AddFunc = (n1, n2) => n1 + n2
 
 // 7. 索引类型
 interface RoleDic {
