@@ -15,4 +15,12 @@
 // enum
 // import './example/enum'
 // 类型推论和兼容性
-import './example/inference-compatibility'
+// import './example/inference-compatibility'
+// 高级类型1
+// import './example/advanced-type-1'
+// 高级类型2
+// import './example/advanced-type-2'
+// ES6和node.js的模块
+import './modules/index'
+// Ts的模块
+import './ts-modules/index'
