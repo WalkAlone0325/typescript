@@ -27,7 +27,7 @@ let prop = 'name'
 const info = {
   name: 'dx', // {name: "dx"}
   [prop]: 'dx', // {name: "dx"} 上下两种输出是一样的
-  [`my${prop}is`]: 'dx' // {mynameis: "dx"}
+  [`my${prop}is`]: 'dx', // {mynameis: "dx"}
 }
 console.log(info)
 
@@ -35,16 +35,16 @@ const s5 = Symbol('name')
 const info2 = {
   [s5]: 'dx1',
   age: 18,
-  sex: 'man'
+  sex: 'man',
 }
 console.log(info2) // {age: 18, sex: "man", Symbol(name): "dx1"}
 info2[s5] = 'dx2'
 console.log(info2) // {age: 18, sex: "man", Symbol(name): "dx2"}
 
 // 以下四种方法都无法获取到 [s5]: 'dx1' 这个属性
-for (const key in info2) {
-  console.log(key) // age sex
-}
+// for (const key in info2) {
+//   console.log(key) // age sex
+// }
 
 console.log(Object.keys(info2)) // ["age", "sex"]
 console.log(Object.getOwnPropertyNames(info2)) // ["age", "sex"]
@@ -66,7 +66,6 @@ console.log(Symbol.keyFor(s6)) // undefined
 // 注：必须是通过 Symbol.for() 创建的才能通过 Symbol.keyFor() 拿到 标识
 console.log(Symbol.keyFor(s10)) // haha
 
-
 /**
  * 11 个内置的 Symbol 值
  */
@@ -74,7 +73,7 @@ console.log(Symbol.keyFor(s10)) // haha
 const obj1 = {
   [Symbol.hasInstance](otherObj: object) {
     console.log(otherObj) // {a: "a"}
-  }
+  },
 }
 console.log({ a: 'a' } instanceof (obj1 as any)) // false
 
@@ -86,4 +85,3 @@ arr[(Symbol.isConcatSpreadable as any)] = false
 console.log(([] as any).concat(arr, [3, 4])) // [Array(2), 3,  4]
 
 console.log(arr[(Symbol.isConcatSpreadable as any)]) // false
-
