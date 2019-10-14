@@ -21,6 +21,14 @@
 // 高级类型2
 // import './example/advanced-type-2'
 // ES6和node.js的模块
-import './modules/index'
+// import './modules/index'
 // Ts的模块
-import './ts-modules/index'
+// import './ts-modules/index'
+// 声明合并
+// import './example/merging'
+// 装饰器
+// import './example/decorators'
+// mixin混入
+// import './example/mixin'
+// 重要更新
+import './example/upload'

@@ -14,3 +14,6 @@ import name = require('./c')
 
 // 命名空间, ///指明
 /// <reference path="space.ts">
+
+// 模块解析：相对和非相对模块导入
+// 相对导入 根目录/ 当前目录./ 上级目录../
