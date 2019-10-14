@@ -11,4 +11,8 @@
 // // es6-class
 // import './example/es6-class'
 // ts
-import './example/ts-class'
+// import './example/ts-class'
+// enum
+// import './example/enum'
+// 类型推论和兼容性
+import './example/inference-compatibility'
